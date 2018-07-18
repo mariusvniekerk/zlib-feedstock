@@ -1,0 +1,15 @@
+phases:
+- phase: Windows
+  queue: Hosted VS2017
+  steps:
+  - script: echo hello from Windows
+
+- phase: macOS
+  queue: Hosted macOS Preview
+  steps:
+  - script: echo hello from macOS
+
+- phase: Linux
+  queue: Hosted Linux Preview
+  steps:
+  - script: echo hello from Linux
